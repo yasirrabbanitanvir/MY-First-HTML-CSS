@@ -1,0 +1,601 @@
+h1{
+
+    /*color: blue;*/
+    
+
+}
+
+body{
+
+   
+/*background-color: brown;*/
+/*background-image: url(pngtree-color-business-desk-surface-infographic-vector-material-picture-image_1090383.jpg);*/
+ /* background-repeat: no-repeat */
+ 
+    
+
+
+
+}
+
+p{
+   
+/*border-width: 2px;
+border-style: solid;*/
+clear: both;
+}
+
+
+.p1{
+
+border-width: 5px;
+    border-color: honeydew;
+    border-radius: 20px;
+    outline-width: 10px;
+    outline-style: inset;
+    outline-offset: 5px;
+    text-transform: uppercase;
+    text-indent: 25px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 30px;
+    font-family: serif;
+    font-weight: 200;
+   /* max-width: 800px;*/
+    /*font-family: 'Saira Extra Condensed', sans-serif;*/
+   /* overflow: scroll;*/
+   /*position: absolute;
+   top: o;
+   right: 0;
+   left: o;
+   bottom: 0;*/
+
+   
+   
+}
+
+.tanvir{
+    margin-top: 10%;
+    
+margin-left: 25%;
+width: 500px;
+height: 300px;
+background-color: green;
+position: relative;
+/*margin-top: 80px;
+margin: 50px;
+padding-top: 20px;
+padding-left: 20px;
+/*max-width: 800px;*/
+
+
+
+
+
+
+
+}
+.tanvir2{
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+   
+
+
+}
+
+.tanvir3{
+    position:sticky;
+  top: 0;
+border: 2px solid ;
+margin-top: 2px;
+margin-left: 25%;
+width: 498px;
+background-color: black;
+color: white;
+
+
+
+
+}
+
+a{
+color: blue;
+
+
+}
+a:hover{
+
+
+
+    color: black;
+    background-color: blue;
+
+
+}
+
+a:visited{
+color: tomato;
+
+}
+
+ol, li{
+    
+/*
+    list-style: square inside url(icons8-user-30.png);
+    /*display: inline;*/
+
+    
+    
+
+    
+}
+
+table, th, td{
+
+    border: 5px solid tomato;
+    border-collapse: collapse;
+}
+
+table{
+
+    width: 100px;
+}
+.x{
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+}
+.lebel{
+
+
+    
+}
+
+.img1{
+
+    width: 400px;
+    float: left;
+}
+
+img:hover{
+
+
+opacity: 0.5;
+
+}
+
+.img2{
+
+    width: 400px;
+    float: right;
+}
+.box1{
+    width: 300px;
+    height: 200px;
+    background-color: black;
+
+}
+
+.box2{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+
+
+}
+
+.box3{
+    width: 300px;
+    height: 200px;
+    background-color:green;
+
+
+}
+.box4{
+
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+
+}
+div{
+
+    float: left;
+}
+
+h2:nth-child(5){
+
+    color: red;
+    
+}
+
+.tt0::first-letter{
+
+    color: blue;
+    font-size: 40px;
+}
+
+h2::before{
+    content: url(icons8-user-30.png);
+}
+.x2{
+    width: 700px;
+    height: 400px;
+    background: url(nidcards.com-3.webp);
+    overflow: hidden;
+    border: 1px rgb(0,0,0, 0.5);
+    width: 700px;
+    height: 500px;
+    box-shadow: 5px 5px 5px rgb(0,0,0, 0.5);
+    margin-left: 25%;
+    margin-top: 20;
+}
+
+.tt{
+
+    font-size: 50px;
+    text-shadow: 5px 5px 5px red;
+}
+
+.x3 p {
+    text-align: center;
+    background-color: white;
+    margin: 100px;
+    padding: 10px;
+    opacity: 0.5;
+    margin-left: 120%;
+
+
+}
+
+.pp1{
+    font-size: 50px;
+     font-weight: bold;
+    text-shadow: -5px -5px 5px red;
+}
+
+.ho{
+
+    width: 80px;
+    height: 80px;
+    background-image: url(Sprite.png);
+    background-position: 0, -59px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: 1s;
+    
+    
+}
+
+.ho:hover{
+
+    background-position: 0, -138px ;
+
+}
+
+.box5{
+
+    height: 400px;
+    width: 400px;
+    background-color: brown;
+    color: #000;
+    margin: 100px auto;
+    position: relative;
+    transform: rotate(45deg);
+    /*transform: scale(2);*/
+    transform: skew(45deg);
+    transform: translate(0,50px);
+}
+
+.box5 h4{
+
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 30%;
+    /*transition-property: all;
+    transition-delay: 2s;
+    transition-duration: 0.10s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);*/
+    /*transition: all 0.5s linear;
+    animation-name: square;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: ;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running;*/
+    animation: square 4s linear 2s infinite alternate backwards running;
+}
+
+
+@keyframes square{
+
+    0%{background-color: yellow;
+    left: 0;
+    right: 0;
+    }
+
+
+    20%{background-color: green;
+    left: 500px;
+    right: 0;
+    }
+
+    60%{background-color: black;
+    left: 500px;
+    right: 500px;
+    border-radius: 50%;
+    }
+    90%{background-color: white;
+    left: 0;
+    right: 0;
+    border-radius: 0px;
+}
+
+}
+
+h3{
+
+    margin-top: 70%;
+}
+
+.box5:hover{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: green;
+    transform: rotate(180deg);
+}
+
+.box6{
+
+    height: 400px;
+    width: 400px;
+    border: 15px solid tomato;
+    border-radius: 50%;
+    margin: 300px auto;
+    margin-left: 40%;
+    animation-name: square;
+    animation-duration: 4s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: box 2s infinite forwards  ;
+}
+
+@keyframes box{
+0%{border-color: red; transform: scale(1);}
+20%{border-color: orange; transform: scale(1.1);}
+40%{border-color: lime; transform: scale(1.2);}
+60%{border-color: black; transform: scale(1.3);}
+80%{border-color: navy; transform: scale(1.4);}
+
+
+
+}
+
+.circle{
+
+
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    animation: circle 2s infinite alternate;
+
+}
+
+@keyframes circle{
+
+    10%{transform: rotate(0deg); border-width: 10px;}
+    20%{border-color: aqua; border-width: 20px;}
+    40%{border-color: gold; border-width: 30px;}
+    80%{transform: rotate(360deg); border-width: 40px;}
+}
+
+.flexbox{
+
+    background-color: aqua;
+    font-size: 40px;
+    display: flex;
+    margin-left: 20%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: end;
+    height: 400px;
+    align-items: center;
+}
+
+.flexbox > div{
+
+    background-color: gray;
+    margin: 5px;
+}
+
+.flexbox > div:nth-child(5){
+
+    order: 1;
+}
+
+
+main{
+
+    width: 75%;
+    margin: 10px auto;
+    border: 1px solid darkgoldenrod;
+    color: white;
+    display: grid;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: repeat(3, 1fr)150px;
+    grid-gap: 5px;}
+
+
+.div1{background-color: #000; grid-column: 1/-1;}
+.div2{background-color: orange;}
+.div3{background-color: blueviolet;}
+.div4{background-color: blue;}
+.div5{background-color: aqua; grid-row: 2/4; grid-column: 4/5;}
+.div6{background-color: chartreuse; grid-column: 1/4;}
+.div7{background-color: darkgreen; grid-column: 1/-1;}
+
+
+.logo{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin:auto;
+    margin-top: 10px;
+   
+ 
+}
+
+
+header{
+
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    color: red;
+    display: flex  ;
+  
+   
+    
+
+}
+
+
+
+.navbar{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center  ;
+    padding-left: 400px;
+}
+
+
+.navbar ul{
+list-style: none;
+
+}
+
+.navbar ul li{
+
+    background-color: #262626;
+    width: 170px;
+    border: 1px solid black;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.navbar ul li:hover{
+    background-color: crimson;
+    transition: all ease-in 0.5s;
+
+
+
+}
+
+.navbar ul ul{
+
+    display: none;
+}
+
+.navbar ul li:hover > ul {
+
+    display: block;
+
+
+}
+
+footer{
+
+    
+    position: absolute;
+    margin-bottom: 0.5px;
+    text-align: center;
+    background-color: #262626;
+    width: 100%;
+    color: white;
+ 
+
+
+}
+.fotx{
+
+    font-size: 40px;
+    margin-left: 470px;
+
+}
+
+.fotx2{
+
+    font-size: 30px;
+}
+
+.fotx3{
+
+    font-size: 25px;
+  
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    line-height: 50px;
+}
+
+.icon{
+
+    font-size: 45px;
+    position: relative;
+    top: -20px;
+    padding: 10px;
+
+}
+
+.form1{
+
+
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 20px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn{
+
+    font-weight: bold;
+}

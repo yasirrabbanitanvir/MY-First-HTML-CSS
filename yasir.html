@@ -2,44 +2,266 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/6d05661b67.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            max-width: 960px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            max-width: 1008px;
+            margin: auto;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+      
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .container h6 {
+            flex-basis: 100%;
+            text-align: center;
+            background-color: #007bff;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .container h6.bg-secondary {
+            background-color: #6c757d;
+        }
+
+        .container h6.bg-warning {
+            background-color: #ffc107;
+        }
+
+        .flex-rows {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .p-2 {
+            background-color: blueviolet;
+            margin: 5px;
+        }
+
+        .toast-container {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+        }
+
+        .div4 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .div4 .col-4 {
+            flex: 0 0 calc(33.333% - 20px);
+            
+        }
+
+        .modal-dialog {
+            max-width: 600px;
+            margin: 1.75rem auto;
+        }
+
+        .div5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+        }
+
+        .form1 {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .div6 {
+            background-color: burlywood;
+            padding: 20px;
+          
+        }
+
+        .tanvir {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: green;
+        }
+
+        .tanvir .tanvir2 {
+            
+            background-color: red;
+            border-radius: 50%;
+
+        }
+
+        .tanvir3 {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+
+        .x {
+         
+            text-align: center;
+            padding: 20px;
+            color: #343a40;
+        }
+
+        .img1 {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .div7 {
+            padding: 20px;
+        }
+
+    
+
+        .icon {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .fotx3 {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    
+<main>
     <header>
-
         <div class="logo"><br>
             <div class="navbar">
                 <ul>
-                   <li><a href="Home" >Home</a></li>
-                   <li><a href="Blog">Blog</a></li>
-                   <li><a href="Services">Services</a>
-                    <ul>
-                        <li>Graphics</li>
-                        <li>Web Design</li>
-                    </ul> </li>
-                   <li><a href="About us">About Us</a></li>
+                    <li><a href="Home" >Home</a></li>
+                    <li><a href="Blog">Blog</a></li>
+                    <li><a href="Services">Services</a>
+                        <ul>
+                            <li>Graphics</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </li>
+                    <li><a href="About us">About Us</a></li>
                 </ul>
             </div>
-    
         </div>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
     <marquee class="pp1" style="text: size adjust 200px;;" >My First Website</marquee>
-    
-    <h1>My First HTML Code</h1>
-    <br>
-    <br>
 
+    
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+
+    <div class="container">
+        <div class="div2">  <button type="button" class="btn btn-primary" id="liveToastBtn">Notification</button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="icons8-user-30.png" alt=" " class="me-2">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Hi, How can i help you?.
+                </div>
+            </div>
+        </div>
+             
+              <script>const toastTrigger = document.getElementById('liveToastBtn')
+                const toastLiveExample = document.getElementById('liveToast')
+                
+                if (toastTrigger) {
+                  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+                  toastTrigger.addEventListener('click', () => {
+                    toastBootstrap.show()
+                  })
+                }</script>
+        
+             
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"> 
+
+    </div>
+
+
+    <div class="div4">
+    
+    <img class="img1" src="nidcards.com-3.webp" alt="Hablu">
+      
+    <p color >Smart Card Status Check করার জন্য ভিজিট করুন https://services.nidw.gov.bd/nid-pub/card-status জাতীয় পরিচয় পত্র নাম্বার, জন্ম তারিখ লিখুন। তারপর একটি সিকিউরিটি ক্যাপচা পূরণ করে স্মার্ট কার্ড স্ট্যাটাস চেক করুন। চেক করার মাধ্যমে জানতে পারবেন আপনার Smart NID Card তৈরি হয়েছে কিনা কোথা থেকে এটি সংগ্রহ করতে হবে ইত্যাদি।
+    
+        NID Card Status চেক করার সাইটে ভিজিট করুন
+        NID নাম্বার এবং জন্ম তারিখ লিখুন
+        সিকিউরিটি প্রশ্নের উত্তর লিখুন
+        সাবমিট বাটন চেপে Smart NID Status দেখুন।
+        বাংলাদেশ নির্বাচন কমিশন প্রত্যেক নাগরিকের হাতে Smart NID Card পৌঁছে দেয়ার জন্য বিভিন্ন সময় নানা উদ্যোগ নিয়েছে। অধিকাংশ বিভাগীয় শহর গুলোতে এবং সিটি কর্পোরেশন একালায় স্মার্ট আইডি কার্ড বিতরণ কাজ সম্পন্ন হয়েছে। ২০১৯ সালের পর থেকে যে সকল নতুন জাতীয় পরিচয় পত্র নিবন্ধিত হয়েছে তাদের সরাসরি Smart Card প্রদান করা হয়েছে।
+    </p>
+    <br>
     <div class="form1">
         <form action="#" method="GET"></form>
         Email:
@@ -48,71 +270,34 @@
         Password:
         <input type="password" name="password" id="pass">
          <br>
-        <input type="reset" value="Reset" class="btn">
-        <input type="submit" value="Log In" class="btn">
+         
+
+        <button class="btn2"><input type="reset" value="Reset" class="btn"></button>
+        <button class="btn2"><input type="submit" value="Log In" class="btn"></button>
         
     </div>
     <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
-    <!--<img src="20231110_165541.jpg">-->
-    <table border="1">
-<tr>
-<th>Name </th>
-<th>ID</th>
-<th>Position</th>
-
-</tr>
-<tr>
-   <td>Yasir</td>
-   <td>3083</td>
-   <td>CR</td>
-   
-</tr>
-    </table>
-    <br>
-    <!--The winers of V1 competition:
-    <ol type="i">
-    <li>Samir</li>
-    <li>Anik</li>
-    <li>Asif</li>
-    </ol>-->
-
-My facebook:
+      
 
 <i class="fa-brands fa-facebook"></i>
+<p>My facebook:</p>
     <a href="https://web.facebook.com/yasirrabbanitanvir" 
-    target="_blank">Click here</a>
-    <p class="p1" style="color: black; text-align: center;background-color: blue; font-size: 25px;"> <b> The reason bahind this website is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nobis vitae exercitationem atque asperiores alias blanditiis dignissimos ut accusantium eaque, maxime, eius, ratione a nihil libero deserunt hic quisquam minus quis. Tempora consectetur dolorum, non laborum quaerat delectus voluptate id voluptates. </b><br> <br>
-<!--Comment-->
-      
-    <strong><i><u> <mark><sub>2ndline</sub><sup>agreement</sup><bdo dir="rtl">Lorem ipsum dolor sit amet.</bdo></mark> </u></i></strong></p>
+    target="_blank">Click here</a></div>
+  
+    <div class="div5">
 
-    <iframe src="https://www.bdjobs.com/" name="Yasir" frameborder="0"></iframe>
-    <a href="https://www.daraz.com.bd/" target="Yasir">Click here</a>
-    <br> <br>
+        
+        <iframe class="ts" src="https://www.bdjobs.com/" name="Yasir" frameborder="0"></iframe>
+        <a href="https://www.daraz.com.bd/" target="Yasir">Click here</a>
+        <br> <br>
+        
+        <iframe width="380" height="300" src="https://www.youtube.com/embed/7N81UDv-BW4?si=0jRM80DCoYwAaNLh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        
+    </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7N81UDv-BW4?si=0jRM80DCoYwAaNLh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    <video controls src="#joker__Joker_bgm__Joker_song(720p).mp4" type="video/mp4"></video>
-
-
-    <h1 style="text-align: center;"> Signup Form</h1>
+    <div class="div6">
+        <h1 style="text-align: center;"> Signup Form</h1>
     <hr>
     <label for="User">Name</label>
     <input type="text" id="User" name="User" placeholder="username"><br>
@@ -173,125 +358,132 @@ My facebook:
 
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
+<br>
+<br>
+<br>
 
 
-<div class="tanvir">
-    <div class="tanvir2">
-
+<div class="kp">  <div class="tanvir">
+        <div class="tanvir2">
+    
+        </div>
     </div>
+
+      <div class="tanvir3">
+          The National Flag of Bangladesh
+      </div>
+</div>   
+    </div>
+
+       
+
+
+<div class="div7">
+    
+    <div class="div7"><br>
+<div class="row">
+    <div class="col-4">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <h4 id="list-item-1">Item 1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam necessitatibus eveniet ullam quisquam saepe atque totam corrupti excepturi exercitationem iure, illum possimus nisi minima molestiae explicabo suscipit commodi reprehenderit!
+        </p>
+        <h4 id="list-item-2">Item 2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis quisquam fuga quod quos, odio quidem accusamus commodi ipsum recusandae neque harum dolores culpa eveniet vitae eligendi dolor? Eius, quidem nesciunt!</p>
+        <h4 id="list-item-3">Item 3</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugiat consectetur placeat accusamus sint illum tempora beatae dolores ut neque aut, quidem voluptas labore minus unde possimus quas id sed!</p>
+        <h4 id="list-item-4">Item 4</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nesciunt aspernatur illo impedit maxime quos praesentium quaerat. Quia aut excepturi explicabo repellendus exercitationem? Itaque quaerat repellendus, alias aspernatur laboriosam ad?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box6">
+  
+  <div class="circle"> </div>
+</div>
+</div>
+
+
+    
+    </div>
+
+
+
+        
+<script>
+    
+</script>
+
+</main>
+
+<div class="me">
+    <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+    
+    </div>
+
+
+
+  
+    
+<div class="xp">
+
+    <footer>
+  <div>
+    <h6 class="fotx">This is my website</h6>
+    <div>
+        <p class="fotx2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatem beatae. Commodi impedit nemo culpa aspernatur, beatae accusantium odit dolores quas, ratione dignissimos nam excepturi minus deleniti, repudiandae qui alias.</p>
+    </div>
+    <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="fotx3">
+        copyright @2023 by Yasir Rabbani Tanvir
+    </div>
+
+  </div>
+   
+</footer>
     
 
-</div>
-<div class="tanvir3">
-    The National Flag of Bangladesh
-</div>
-<div class="x">
-    Yasir Rabbani Tanvir
-</div>
-
-<img class="img1" src="nidcards.com-3.webp" alt="Hablu">
-
-<p>Smart Card Status Check করার জন্য ভিজিট করুন https://services.nidw.gov.bd/nid-pub/card-status জাতীয় পরিচয় পত্র নাম্বার, জন্ম তারিখ লিখুন। তারপর একটি সিকিউরিটি ক্যাপচা পূরণ করে স্মার্ট কার্ড স্ট্যাটাস চেক করুন। চেক করার মাধ্যমে জানতে পারবেন আপনার Smart NID Card তৈরি হয়েছে কিনা কোথা থেকে এটি সংগ্রহ করতে হবে ইত্যাদি।
-
-    NID Card Status চেক করার সাইটে ভিজিট করুন
-    NID নাম্বার এবং জন্ম তারিখ লিখুন
-    সিকিউরিটি প্রশ্নের উত্তর লিখুন
-    সাবমিট বাটন চেপে Smart NID Status দেখুন।
-    বাংলাদেশ নির্বাচন কমিশন প্রত্যেক নাগরিকের হাতে Smart NID Card পৌঁছে দেয়ার জন্য বিভিন্ন সময় নানা উদ্যোগ নিয়েছে। অধিকাংশ বিভাগীয় শহর গুলোতে এবং সিটি কর্পোরেশন একালায় স্মার্ট আইডি কার্ড বিতরণ কাজ সম্পন্ন হয়েছে। ২০১৯ সালের পর থেকে যে সকল নতুন জাতীয় পরিচয় পত্র নিবন্ধিত হয়েছে তাদের সরাসরি Smart Card প্রদান করা হয়েছে।
-</p>
-
-<img class="img2" src="nidcards.com-3.webp" alt="Hablu">
-<p>Smart Card Status Check করার জন্য ভিজিট করুন https://services.nidw.gov.bd/nid-pub/card-status জাতীয় পরিচয় পত্র নাম্বার, জন্ম তারিখ লিখুন। তারপর একটি সিকিউরিটি ক্যাপচা পূরণ করে স্মার্ট কার্ড স্ট্যাটাস চেক করুন। চেক করার মাধ্যমে জানতে পারবেন আপনার Smart NID Card তৈরি হয়েছে কিনা কোথা থেকে এটি সংগ্রহ করতে হবে ইত্যাদি।
-
-    NID Card Status চেক করার সাইটে ভিজিট করুন
-    NID নাম্বার এবং জন্ম তারিখ লিখুন
-    সিকিউরিটি প্রশ্নের উত্তর লিখুন
-    সাবমিট বাটন চেপে Smart NID Status দেখুন।
-    বাংলাদেশ নির্বাচন কমিশন প্রত্যেক নাগরিকের হাতে Smart NID Card পৌঁছে দেয়ার জন্য বিভিন্ন সময় নানা উদ্যোগ নিয়েছে। অধিকাংশ বিভাগীয় শহর গুলোতে এবং সিটি কর্পোরেশন একালায় স্মার্ট আইডি কার্ড বিতরণ কাজ সম্পন্ন হয়েছে। ২০১৯ সালের পর থেকে যে সকল নতুন জাতীয় পরিচয় পত্র নিবন্ধিত হয়েছে তাদের সরাসরি Smart Card প্রদান করা হয়েছে।
-</p>
-<div class="box1"></div>
-<div class="box2"></div>
-<div class="box3"></div>
-<div class="box4"></div>
-
-<h2>This website HTML & CSS base</h2>
-<h2>This website HTML & CSS base</h2>
-<h2>This website HTML & CSS base</h2>
-<h2>This website HTML & CSS base</h2>
-<p class="tt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione, facere nesciunt similique totam aspernatur accusamus iure perspiciatis, doloribus doloremque laboriosam assumenda dicta? Expedita, ab nisi deleniti error sint fuga!10
-
-</p>
-<div class="x2">
-
-<div class="x3">
-    <p class="tt">Hablu</p>
-</div>
 
 
-</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+   
+   
+        crossorigin="anonymous"></script>
 
-<div class="ho">
+        <style>
+ const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example'
+})</style>
 
-</div>
-
-<h3>Hi Ki obostha</h3>
-<div class="box5">
-<h4>hablu</h4>
-</div>
-
-<div class="box6">
-
-    <div class="circle"> </div>
-</div>
-
-<div class="flexbox">
-
-<div class="box8">box 1</div>
-<div class="box9">box 2</div>
-<div class="box10">box 3</div>
-<div class="box11">box 4</div>
-
-
-</div>
-<main>
-    <div class="div1">Header</div>
-    <div class="div2">Box1</div>
-    <div class="div3">Box2</div>
-    <div class="div4">Box3</div>
-    <div class="div5">Slidebar</div>
-    <div class="div6">main Content</div>
-    <div class="div7">footer</div>
-</main>
-<br>
-<br>
-<br>
-<br>
-
-<footer>
-
-<div>
-
-    <h6 class="fotx">This my website</h6>
-
-</div>
-<div>
-    <p class="fotx2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatem beatae. Commodi impedit nemo culpa aspernatur, beatae accusantium odit dolores quas, ratione dignissimos nam excepturi minus deleniti, repudiandae qui alias.</p>
-</div>
-<div class="icon">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-brands fa-youtube"></i>
-
-</div>
-
-<div class="fotx3">
-    copyright @2023 by Yasir Rabbani Tanvir
-</div>
-
-</footer>
-
-
-
-    </body>
+const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+dataSpyList.forEach(dataSpyEl => {
+  bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
+})
+</body>
 </html>
+

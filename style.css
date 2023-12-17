@@ -398,7 +398,7 @@ main {
 }
 
 .div7 {
-    background-color: darkgreen;
+    background-color: #5a4692;
     grid-column: 1/-1;
 }
 
@@ -547,5 +547,5 @@ main {
 .ts{
 
     width: 380px;
-    height: 300px;
+    height: 765px;
 }

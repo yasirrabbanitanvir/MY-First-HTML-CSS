@@ -253,7 +253,7 @@
     
     <img class="img1" src="nidcards.com-3.webp" alt="Hablu">
       
-    <p color >Smart Card Status Check করার জন্য ভিজিট করুন https://services.nidw.gov.bd/nid-pub/card-status জাতীয় পরিচয় পত্র নাম্বার, জন্ম তারিখ লিখুন। তারপর একটি সিকিউরিটি ক্যাপচা পূরণ করে স্মার্ট কার্ড স্ট্যাটাস চেক করুন। চেক করার মাধ্যমে জানতে পারবেন আপনার Smart NID Card তৈরি হয়েছে কিনা কোথা থেকে এটি সংগ্রহ করতে হবে ইত্যাদি।
+    <p >Smart Card Status Check করার জন্য ভিজিট করুন https://services.nidw.gov.bd/nid-pub/card-status জাতীয় পরিচয় পত্র নাম্বার, জন্ম তারিখ লিখুন। তারপর একটি সিকিউরিটি ক্যাপচা পূরণ করে স্মার্ট কার্ড স্ট্যাটাস চেক করুন। চেক করার মাধ্যমে জানতে পারবেন আপনার Smart NID Card তৈরি হয়েছে কিনা কোথা থেকে এটি সংগ্রহ করতে হবে ইত্যাদি।
     
         NID Card Status চেক করার সাইটে ভিজিট করুন
         NID নাম্বার এবং জন্ম তারিখ লিখুন
@@ -300,7 +300,8 @@
         <h1 style="text-align: center;"> Signup Form</h1>
     <hr>
     <label for="User">Name</label>
-    <input type="text" id="User" name="User" placeholder="username"><br>
+    <input type="text" id="User" name="User" placeholder="username">
+    <br>
     <label for ="email">Email</label>
     <input type="email" id="email" name ="usermail" placeholder="usermail" required>
     <br>
@@ -480,10 +481,14 @@
   target: '#navbar-example'
 })</style>
 
-const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+<style> const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
 dataSpyList.forEach(dataSpyEl => {
   bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
 })
+    
+    </style>
+
+
 </body>
 </html>
 

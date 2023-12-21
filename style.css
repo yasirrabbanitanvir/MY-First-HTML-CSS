@@ -389,6 +389,7 @@ main {
         display: flex;
         justify-content: space-between; Aligns items to the left and right
         /* align-items: center; */
+        text-align: justify; 
        
       }
 
@@ -533,10 +534,23 @@ main {
     background-color: deeppink;
 }
 
-.xp{
-
-    margin-left: 170px
+.xp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid darkgoldenrod;
+    padding: 20px;
 }
+
+.xp {
+    width: 75%;
+    margin: 10px auto;
+   
+    color: white;
+}
+
+
 
 .me{
 
@@ -557,4 +571,5 @@ main {
 .newt{
 
     color: #000;
+    text-align: justify; 
 }

@@ -15,6 +15,7 @@
             flex-direction: column;
             min-height: 100vh;
             margin: 0;
+        
         }
 
         main {
@@ -110,9 +111,15 @@
         .div5 {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 0px;
+           float: right;
+          
         }
+        
+
+        .div5,
+    .div6 {
+      flex: 1; /* This will make both divs take equal space */
+    }
 
         .form1 {
             max-width: 400px;
@@ -125,8 +132,13 @@
         }
 
         .div6 {
-            background-color: burlywood;
-            padding: 20px;
+        
+          
+
+            display: flex;
+            flex-direction: column;
+            float: left;
+           
           
         }
 
@@ -136,6 +148,7 @@
             align-items: center;
             padding: 20px;
             color: green;
+            width: 474px;
         }
 
         .tanvir .tanvir2 {
@@ -146,6 +159,7 @@
         }
 
         .tanvir3 {
+            width: 475px;
             text-align: center;
             background-color: #007bff;
             color: white;
@@ -167,6 +181,8 @@
 
         .div7 {
             padding: 20px;
+            display: flex;
+      flex-direction: row;
            
         }
 
@@ -286,13 +302,28 @@
     target="_blank">Click here</a></div>
   
     <div class="div5">
-
         
+        <br>  
         <iframe class="ts" src="https://www.bdjobs.com/" name="Yasir" frameborder="0"></iframe>
         <a href="https://www.daraz.com.bd/" target="Yasir">Click here</a>
-        <br> <br>
+        <br> 
         
         <iframe width="380" height="300" src="https://www.youtube.com/embed/7N81UDv-BW4?si=0jRM80DCoYwAaNLh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+
+        <p class="newt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab libero, blanditiis quia temporibus iste exercitationem! Sequi, laudantium sed alias dolorem facere, deserunt itaque quas consequuntur optio quaerat velit adipisci magnam ex enim. Ipsam corporis omnis cum laborum commodi quasi vero perspiciatis impedit. Doloribus quam nisi nemo eaque tempora temporibus? Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sit voluptatem blanditiis aliquam id officia ut ab optio sed at? Ea iusto, voluptates nisi praesentium sunt reiciendis similique porro delectus odit. Totam placeat veniam modi nihil iusto, commodi a deserunt maxime eos, maiores repellat eligendi ullam eveniet aperiam, accusamus temporibus?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab libero, blanditiis quia temporibus iste exercitationem! Sequi, laudantium sed alias dolorem facere, deserunt itaque quas consequuntur optio quaerat velit adipisci magnam ex enim. Ipsam corporis omnis cum laborum commodi quasi vero perspiciatis impedit. Doloribus quam nisi nemo eaque tempora temporibus? Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sit voluptatem blanditiis aliquam id officia ut ab optio sed at? Ea iusto, voluptates nisi praesentium sunt reiciendis similique porro delectus odit. Totam placeat veniam modi nihil iusto, commodi a deserunt maxime eos, maiores repellat eligendi ullam eveniet aperiam, accusamus temporibus?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab libero, blanditiis quia temporibus iste exercitationem! Sequi, laudantium sed alias dolorem facere, deserunt itaque quas consequuntur optio quaerat velit adipisci magnam ex enim. Ipsam corporis omnis cum laborum commodi quasi vero perspiciatis impedit. Doloribus quam nisi nemo eaque tempora temporibus? Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sit voluptatem blanditiis aliquam id officia ut ab optio sed at? Ea iusto, voluptates nisi praesentium sunt reiciendis similique porro delectus odit. Totam placeat veniam modi nihil iusto, commodi a deserunt maxime eos, maiores repellat eligendi ullam eveniet aperiam, accusamus temporibus?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab libero, blanditiis quia temporibus iste exercitationem! Sequi, laudantium sed alias dolorem facere, deserunt itaque quas consequuntur optio quaerat velit adipisci magnam ex enim. Ipsam corporis omnis cum laborum commodi quasi vero perspiciatis impedit. Doloribus quam nisi nemo eaque tempora temporibus? Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing eli adipisicing elit ipsum dolor elit ipsum dolor elit.
+        <br>
+        <br>
+</p>
+        
         
         
     </div>
@@ -383,46 +414,38 @@
 <div class="div7">
     
     <div class="div7"><br>
-<div class="row">
-    <div class="col-4">
-      <div id="list-example" class="list-group">
-        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        
+    <div class="row">
+      <div class="col-4">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0" class="scrollspy-example">
+          <h4 id="list-item-1">Item 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ...</p>
+          <h4 id="list-item-2">Item 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. ...</p>
+          <h4 id="list-item-3">Item 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ...</p>
+          <h4 id="list-item-4">Item 4</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. ...</p>
+        </div>
       </div>
     </div>
-    <div class="col-8">
-      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-        <h4 id="list-item-1">Item 1</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam necessitatibus eveniet ullam quisquam saepe atque totam corrupti excepturi exercitationem iure, illum possimus nisi minima molestiae explicabo suscipit commodi reprehenderit!
-        </p>
-        <h4 id="list-item-2">Item 2</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis quisquam fuga quod quos, odio quidem accusamus commodi ipsum recusandae neque harum dolores culpa eveniet vitae eligendi dolor? Eius, quidem nesciunt!</p>
-        <h4 id="list-item-3">Item 3</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugiat consectetur placeat accusamus sint illum tempora beatae dolores ut neque aut, quidem voluptas labore minus unde possimus quas id sed!</p>
-        <h4 id="list-item-4">Item 4</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nesciunt aspernatur illo impedit maxime quos praesentium quaerat. Quia aut excepturi explicabo repellendus exercitationem? Itaque quaerat repellendus, alias aspernatur laboriosam ad?</p>
-      </div>
+
+
+    <div class="box6">
+      <div class="circle"></div>
     </div>
   </div>
 
-  <div class="box6">
-  
-  <div class="circle"> </div>
-</div>
-</div>
+  <script src="path/to/bootstrap.bundle.min.js"></script>
 
-
-    
-    </div>
-
-
-
-        
-<script>
-    
-</script>
 
 </main>
 
@@ -477,17 +500,30 @@
    
         crossorigin="anonymous"></script>
 
-        <style>
- const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#navbar-example'
-})</style>
+        <script> const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#list-example'
 
-<style> const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+  
+
+
+})</script>
+
+<style>  const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
 dataSpyList.forEach(dataSpyEl => {
   bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
-})
+}) 
+
+const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+ 
+}) </style>
+
+
+
+
     
-    </style>
+
+
 
 
 </body>

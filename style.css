@@ -331,7 +331,7 @@ h3 {
     }
 }
 
-.flexbox {
+/* .flexbox {
     background-color: aqua;
     font-size: 40px;
     display: flex;
@@ -350,7 +350,7 @@ h3 {
 
 .flexbox>div:nth-child(5) {
     order: 1;
-}
+} */
 
 main {
     width: 75%;
@@ -366,7 +366,7 @@ main {
 .div1 {
     height: 1000px;
     background-color: #000;
-    grid-column: 1/-1;
+  
 }
 
 .div2 {
@@ -383,23 +383,27 @@ main {
 
 
     .div5 {
-
- 
+        height: 1806px;
+        width: 416px;
+        background-color: #fab301;
         display: flex;
-        justify-content: space-between; /* Aligns items to the left and right */
-        align-items: center;
-        padding: 0;
+        justify-content: space-between; Aligns items to the left and right
+        /* align-items: center; */
+       
       }
 
 
 .div6 {
-    background-color: chartreuse;
-    grid-column: 1/4;
+
+    height: 1806px;
+    width: 416px;
+    background-color: #002540;
+
 }
 
 .div7 {
     background-color: #5a4692;
-    grid-column: 1/-1;
+
 }
 
 .logo {
@@ -547,5 +551,10 @@ main {
 .ts{
 
     width: 380px;
-    height: 765px;
+    height: 300px;
+}
+
+.newt{
+
+    color: #000;
 }
